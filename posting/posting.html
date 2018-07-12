@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>RPL2SHARE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/rpl/css/bootstrap.min.css">
+  <script src="/rpl/jquery.js"></script>
+  <script src="/rpl/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+  <div class="container">
+  <div class="row">
+  <div class="col-md-12">
+  <div class="col-md-8">
+  <div class="row">
+  <div class="col-md-12">
+  <form action="posting.php?no=1" method="POST">
+  <label for="jdl">Judul :</label>
+  <input type="text" class="form-control" id="jdl" name="judul">
+  <label for="tks">Isi :</label>
+  <textarea class="form-control" id="tks" name="isi" rows="16"></textarea>
+   <div class="form-group">
+   <label>File input :</label>
+   <input type="file" name="file">
+   <label for="sel3">Termasuk apa ini :</label>
+  <select class="form-control" id="sel3" name="jenis">
+    <option><i>~Pilih~</i></option>
+    <option value="tutorial">Tutorial</option>
+    <option value="artikel">Artikel</option>
+	<option value="ebook">Ebook</option>
+  </select>
+  <label for="sel1">Kategori(Mata Pelajaran) :</label>
+  <select class="form-control" id="sel1" name="mapel">
+    <option><i>~Pilih~</i></option>
+    <option value="pemrograman dasar">Pemrograman Dasar</option>
+    <option value="sistem komputer">Sistem Komputer</option>
+    <option value="simdig">Simulasi Digital</option>
+    <option value="perakitan komputer">Perakitan Komputer</option>
+	<option value="sistem operasi">Sistem Operasi</option>
+	<option value="jaringan dasar">Jaringan Dasar</option>
+	<option value="pemrograman web">pemrograman Web</option>
+	<option value="lainnya">Lainnya</option>
+  </select>
+  <label for="sel2">Kategori:</label>
+  <select class="form-control" id="sel2" name="kategori">
+  <option><i>~Pilih~</i></option>
+    <option value="php">PHP</option>
+    <option value="html">HTML</option>
+    <option value="design">Design</option>
+    <option value="javascript">JavaScript</option>
+	<option value="lainnya">lainnya</option>
+  </select>
+</div>
+<button type="submit" class="btn btn-primary pull-right">Posting</button>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </body>
+  </html>

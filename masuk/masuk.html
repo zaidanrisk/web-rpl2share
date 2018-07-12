@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Masuk</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/rpl/css/bootstrap.min.css">
+  <script src="/rpl/jquery.js"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+$("#user").focus();
+}); 
+</script>
+  <script src="/rpl/js/bootstrap.min.js"></script>
+  <style>
+  body{
+    background-color: white;
+  background: url(/rpl/img/hero-bg.jpg) no-repeat center top;
+  margin-top: -20px;
+  padding-top: 150px;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 650px;
+  width: auto;
+  
+    background-size: 100%;
+
+    background-size: cover;
+  }
+  .well{
+    width: 320px;
+    position: absolute;
+    top: 150px;
+    left: 500px;
+    font-size: 18px;
+  }
+  .header{
+    width: 320px;
+    position: relative;
+    bottom: 26px;
+    right: 5px;
+    font-size: 18px;
+  }
+  .bg-primary{
+    border-top-right-radius: 10px;
+    border-top-left-radius:  10px;
+    text-align: center;
+  }
+  .form-control{
+    width: 280px;
+    margin-bottom: 10px;
+  }
+  .btn-default{
+    width: 280px;
+  }
+  .daftar p{
+  padding-top: 20px;  
+  margin-left: 75px; 
+  margin-top: 10px;
+  font-size: 15px;
+  margin-bottom: 0px;
+  }
+  .daftar a{
+    margin-left: 85px;
+  }
+  </style>
+  </head>
+<body>
+<div class="well">
+<div class="header row">
+<div class="col-md-12 bg-primary">
+  <h2>Masuk</h2>
+</div>
+</div>
+<div class="row">
+<div class="container">
+<div class="form-group">
+<form action="cekuser.php" method="POST">
+<input type="text" name="username" class="form-control" placeholder="Username" id="user">
+<input type="password" name="password" class="form-control" placeholder="Password">
+<button type="submit" class="btn btn-default ">Masuk</button>
+</form>
+<div class="daftar">
+<p>Tidak punya akun?</p>
+<a href="/rpl/daftar/daftar.html"><button type="button" class="btn btn-link" >Daftar disini!</button></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
